@@ -1,0 +1,362 @@
+.carousel-inner>.item {
+	min-height: 600px;
+	background-size: cover;
+	background-position: center;
+}
+
+.navbar {
+	height: 70px;
+	background-color: #ffffff;
+}
+
+.nav {
+	height: 20px;
+	line-height: 20px;
+	font-size: 20px;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+.navbar-brand {
+	height: 20px;
+	line-height: inherit;
+	font-size: 40px;
+}
+
+.dropdown-menu {
+	font-size: 20px;
+}
+
+body {
+	font-family: 'Open Sans Condensed', 'Georgia';
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	color: rgb(244, 133, 66);
+	font-size: 50px;
+	margin: 50px;
+}
+
+.nav {
+	font-size: 20px;
+	color: white;
+}
+
+.col-md-6 ul {
+	margin: 130px;
+	font-size: auto;
+}
+
+.glyphicon p {
+	font-size: 50px;
+}
+
+.icons {
+	color: rgb(244, 133, 66);
+	font-size: 30px;
+	border: auto;
+	position: center;
+	line-height: 40px;
+	padding: 20px;
+}
+
+.col-md-3 p {
+	color: black;
+	font-weight: bold;
+	font-size: 50px;
+	margin-left: 80px;
+	margin-bottom: -20%;
+	padding-bottom: 0%;
+}
+
+.counter-text p {
+	font-weight: normal;
+	line-height: 1;
+	color: black;
+	font-size: 20px;
+	margin-top: 0px;
+	margin-bottom: 20%;
+}
+
+.col-md-3 {
+	padding: 10px;
+	position: center;
+}
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> Chiara
+.icons li {
+	margin: 15px;
+}
+
+.col-md-4 img {
+	width: 100%;
+	height: 250px;
+	left: 0px;
+}
+
+.text-change {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	display: inline-block;
+}
+
+.text-change img {
+	width: 100%;
+	height: 250px;
+	border-radius: 4px;
+	transition: .3s;
+}
+
+.text-change:hover img {
+	filter: blur(4px) brightness(50%);
+	box-shadow: 0 0 16px cyan;
+}
+
+.text-change :not(img) {
+	position: absolute;
+	top: 30%;
+	z-index: 1;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	opacity: 0;
+	transition: .3s;
+}
+
+.text-change h3 {
+	top: 50%;
+}
+
+.text-change:hover :not(img) {
+	opacity: 1;
+}
+
+.contact-form {
+	background-color: black;
+	margin: 40px;
+	padding: 50px;
+}
+
+.form-control {
+	height: auto;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.who-we-are {
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.About-us-text {
+	line-height: 1, 5;
+}
+
+<<<<<<< HEAD
+.btn-fb:hover {
+  background-color: orange;
+}
+
+.btn-twitter:hover {
+  background-color: orange;
+}
+
+.pinterestbtn:hover {
+
+  background-color: orange;
+}
+#submit {
+align-self:auto;
+ }
+ .fa-hand-holding-heart:hover {
+   color: red;
+ }
+=======
+#submit {
+	margin: 10px auto 10px 20px;
+}
+
+.fa-tint:hover {
+  color: red;
+}
+.fa-male:hover {
+  color: red;
+}
+
+.fa-female:hover {
+  color: red;
+}
+
+.fa-tshirt:hover {
+  color: red;
+}
+
+
+
+/* media queries for mobile */
+
+@media (max-width:768px) {
+	body {
+		margin-left: 5%;
+		margin-right: 5%;
+		padding: auto;
+	}
+}
+
+@media (max-width:768px) and (max-width:1024px) {
+	h3 {
+		text-align: center;
+	}
+}
+
+@media (max-width:768px) and (max-width:1024px) {
+	h4 {
+		text-align: center;
+		font-size: 30px;
+	}
+}
+
+@media (max-width:768px) and (max-width:1024px) {
+	.nav li {
+		background-color: white;
+	}
+}
+
+@media (max-width:768px) and (max-width:1024px) {
+	.navbar {
+		position: absolute!important;
+	}
+}
+
+
+/*media queries for ipad*/
+
+@media (max-width:1024px) {
+	.counter-text p {
+		margin: 10% 10%;
+	}
+}
+
+@media (max-width:1024px) {
+	.fas {
+		margin-left: -15%;
+	}
+}
+
+
+
+/*css for footer*/
+
+
+/*position in the page*/
+
+.myFooter {
+	color: #ffffff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+
+/*style for footer*/
+
+.col-sm-4 li {
+	line-height: 2;
+}
+
+.col-sm-3 li {
+	line-height: 2;
+}
+
+#myFooter {
+	background-color: #d89b4b;
+	color: white;
+}
+
+#myFooter .footer-copyright {
+	background-color: #383737;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+}
+
+#myFooter .footer-copyright p {
+	margin: 10px;
+	color: #ccc;
+}
+
+#myFooter ul {
+	list-style-type: none;
+	padding-left: 0;
+	line-height: 1.7;
+}
+
+#myFooter h5 {
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+#myFooter a {
+	color: #d2d1d1;
+	text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+	text-decoration: none;
+	color: white;
+}
+
+#myFooter .myCols {
+	text-align: center;
+}
+
+#myFooter .social-networks {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 38px;
+}
+
+#myFooter .social-networks a {
+	font-size: 32px;
+	margin-right: 5px;
+	margin-left: 5px;
+	color: #f9f9f9;
+	padding: 10px;
+	transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+	text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+	color: #0077e2;
+}
+
+#myFooter .google:hover {
+	color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+	color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+	#myFooter {
+		text-align: center;
+	}
+}
+>>>>>>> Chiara
