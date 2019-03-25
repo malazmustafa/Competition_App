@@ -1,89 +1,280 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title> Recycling clothes </title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="static/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-</head>
-  <h1>
-    ESQUE Coding Academy
-  </h1>
-  <p>
-    Where intelligence begins   <!--Quote from logo-->
-  </p>
+<html lang="en">
+  <head>
+    <title> Recycling clothes </title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="hello.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  </head>
   <body>
-    <div id="signup-form">
-      <form method="post" action="/signup">
-        <label for="First_name">Firstname:</label>
-        <input type="text" id="firstname" name="firstname" required="required"> <br>
-
-        <label for="Last_name">Lastname:</label>
-        <input type="text" id="lastname" name="lastname" required="required"> <br>
-
-        <label for="Gender">Gender:</label> <br>                    <!--radio buttons for gender selection-->
-        <input type="radio" id="Gender" name="Gender" value="Female" required="required"> Female
-        <input type="radio" id="Gender" name="Gender" value="Male" required="required"> Male
-        <input type="radio" id="Gender" name="Gender" value="Other" required="required"> Other <br>
-
-        <label for="Age">Age Group:</label> <br>
-        <select name="Age" size="3">                                <!--Drop down list for age group-->
-          <option value="0-17">Generation Z (0 - 17)</option>
-          <option value="18-34">Generation Y (18 - 35)</option>
-          <option value="35-50">Generation X (35 - 50)</option>
-          <option value="50+">Baby bloomers (50+)</option>
-        </select> <br>
-
-        <label for="Email">Email address:</label>
-        <input type="email" id="email" name="email" required="required"> <br>
-
-        <label for="Password">Password:</label>
-        <input type="password" id="Password" name="Password" required="required"> <br>
-
-        <input type="submit" value="Submit" id="submitbutton">
-      </form>
-    </div>
-
-    <div id="Top bar">
-
-
-    </div>
-
-    <footer id="myFooter" class="myFooter">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4 myCols">
-            <h5>More About Us</h5>
-            <p> This website was created as part of the Autumn 2018 beginners website development course run in collaboration with CodeFirst:Girls and PA Consulting. The web developers were Chiara Balosetti and Anastasia Aniwa.</p>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">#Recycleyourclothes</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#Welcome">Welcome</a></li>
+            <li><a href="#Facts">Facts</a></li>
+            <li><a href="#Howto">How to help</a></li>
+            <li><a href="#Points">Recyling Points</a></li>
+            <li><a href="about-us.html" target="_blank">Who we are</a></li>
+            <li><a href="#Contact-Us">Contact Us</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Get Involved <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.lovenotlandfill.org/" target="_blank">#LoveNotLandfill</a></li>
+                <li><a href="https://www.recyclenow.com/reduce-waste/repair-and-re-use/love-your-clothes" target="_blank"> Recycle now UK</a></li>
+                <li><a href="http://www.wrap.org.uk/content/clothing-waste-prevention" target="_blank">Wrap.org</a></li>
+                <li><a href="https://www.hubbub.org.uk/" target="_blank"> Hubbub.org</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active" style="background-image:url(images/The_True_Cost.jpg);">
+        </div>
+        <div class="item" style="background-image:url(images/6360.jpg);">
+        </div>
+        <div class="item" style="background-image:url(images/hamilton-vintage-clothing-1.jpg);">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h4 id="Welcome">
+        Welcome to our website
+        <h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+        <h3> Why you should recycle your clothes? </h3>
+        <p align="justify"> When planning for your next big night out, a job interview, or holiday, you might think to buy a new outfit. But have you considered what the impact of fast fashion might be? UK households have an average of <b>£4,000</b> worth of clothes - but <b>30%</b> of those haven’t been worn in the last year! We can all save money and help the environment by making simple changes to the way we buy, use and get rid of our clothing.
+        <br>
+        When clothing isn’t recycled, it means more and more has to be produced and that means more and more pollution for all of us. Pesticides used in the production of clothing enter our ground water and streams affecting bees, animals and the farm workers who have to work with them. Dyes, most of which contain heavy metals, are known to be harmful to public health. Synthetic polyesters and nylon are made from petrochemicals,
+        a byproduct of oil refining which increases our reliance on oil and endangers aquatic life as seen in Blue Planet!
+      </div>
+      <div class="col-md-5">
+        <div class="icons">
+          <ul style= "list-style: none";>
+            <li> <i class="fas fa-hand-holding-heart"> </i> Reduces greenhouse gases </li>
+            <li> <i class="fas fa-hand-holding-heart"> </i> Saves landfill space </li>
+            <li> <i class="fas fa-hand-holding-heart"> </i> Conserves enery </li>
+            <li> <i class="fas fa-hand-holding-heart"> </i> Benefits people </li>
+            <li> <i class="fas fa-hand-holding-heart"> </i> Helps people in need </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class= "row">
+      <div class="col-md-12 text-center">
+        <div class="scary-facts">
+          <h4  id="Facts"> Scary facts about fast fashion </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <span style="font-size: 60px; color: rgb(244,133,66);margin-left:55%">
+          <i class="fas fa-tint" ></i>
+          <p align="center"> 2700 </p>
+        </span>
+        <div class="counter-text">
+          <p align="justify"> <b>Litres of water </b> needed to make one cotton shirt </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <span style="font-size: 60px; color: rgb(244,133,66);margin-left:60%">
+          <i class="fas fa-female"></i>
+          <p align="center"> 35 </p>
+        </span>
+        <div class="counter-text">
+          <p align="justify"> <b>The average life expectancy </b> of a non-organic cotton farmer in India due to chemical exposure on the job. </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <span style="font-size: 60px; color: rgb(244,133,66);margin-left:60%">
+          <i class="fas fa-male"></i>
+          <p align="center"> 40 </p>
+        </span>
+        <div class="counter-text">
+          <p align="justify"> <b>Millions of garment workers </b> around the world today, many facing unsafe and unethical work conditions </p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <span style="font-size: 60px; color: rgb(244,133,66);margin-left:50%">
+          <i class="fas fa-tshirt"></i>
+          <p align="center"> 60 </p>
+        </span>
+        <div class="counter-text">
+          <p align="justify"> <b>% of all clothing </b> produced that ends up in incinerators or landfills within 1 year of being made. </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h4 id="Howto">
+        Ways of Recycling
+        <h4>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-change">
+            <img src="images/Barnardos.jpg" alt="Photo1" class="img-rounded">
+            <h2> Donate </h2>
+            <h3> Donate your clothes to a local charity shop </h3>
           </div>
-          <div class="col-md-4 myCols">
-            <h5>Keep Connected</h5>
-            <ul>
-              <li><a href="https://twitter.com/" class="twitter"> <i class="fab fa-twitter"></i> Twitter </a></li>
-              <li><a href="#" class="facebook"> <i class="fab fa-facebook-f"></i> Facebook </a></li>
-              <li><a href="https://www.google.com/" class="google"> <i class="fab fa-google"></i> Google </a></li>
-              <li><a href="#" class="instagram"> <i class="fab fa-instagram"></i> Instagram </a></li>
-              <li><a href="https://www.snapchat.com/" class="snapchat"> <i class="fab fa-snapchat"></i> Snapchat </a></li>
-            </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="text-change">
+            <img src="images/Dress.jpg" alt="Photo2" class="img-rounded">
+            <h2> Swap </h2>
+            <h3> Swap your clothes with a clothes swap party </h3>
           </div>
-          <div class="col-sm-3 myCols">
-            <h5>Contact Information</h5>
-            <ul>
-              <li><a href="#" class="home"> <i class="fas fa-home"></i> Name </a></li>
-              <li><a href="#" class="address"> <i class="far fa-envelope"></i> Address </a></li>
-              <li><a href="#" class="phone"> <i class="fas fa-mobile-alt"></i> Tel number </a></li>
-            </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="text-change">
+            <img src="images/upcycling.jpg" alt="Photo3" class="img-rounded">
+            <h2> Upcycling </h2>
+            <h3> Sewing techniques to upcycle your clothes </h3>
           </div>
         </div>
       </div>
-      <div class="footer-copyright">
-        <p>© 2018 Copyright </p>
+      <div class="col-md-4">
+        <div class="text-change">
+          <img src="images/m&s.jpg" alt="Photo2" class="img-rounded">
+          <h2> Shwopping </h2>
+          <h3> Return your clothes to a retailer </h3>
+        </div>
       </div>
-    </footer>
+      <div class="col-md-4">
+        <div class="text-change">
+          <img src="images/selling.jpg" alt="Photo3" class="img-rounded">
+          <h2> Sell </h2>
+          <h3> Sell your old clothes online </h3>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="text-change">
+          <img src="images/dog.jpg" alt="Photo3" class="img-rounded">
+          <h2> Donate </h2>
+          <h3> Give your old clothes to your local animal shelter </h3>
+        </div>
+      </div>
+    </div>
 
-    <script src="jquery/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h4 id="Points">
+      Recycling Points in your Area
+      <h4>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p align="justify"> Most local authorities have clothes recycling points situated in common areas. Do check your local authority's website for more details or use this handy map to find one near you!
+        <br> Throwing old clothes straight into the bin can end up just adding to landfill waste, so recylcing is usually the best way to go. Fabrics can be reused by others or if its too worn it can be used as a great DIY piece! Did you know denim can be used as home insulation and old shoes can be made into flooring?
+        </p>
+      </div>
+      <div class="col-md-6">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Recycling%20point&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+            </div>
+            <style>
+              .mapouter {
+                text-align:right;height:300px;width:400px;}
+              .gmap_canvas {
+                overflow:hidden;background:none!important;height:300px;width:400px;}
+            </style>
+          </div>
+      </div>
+<br> <br><br> <br><br> <br><br> <br><br> <br><br> <br>
+    <div class= "row">
+      <div class="col-md-12 text-center">
+        <h4 id="Contact-Us"> Contact Us </h4>
+      </div>
+      <div class="contact-form">
+        <form id="contact-form" class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control" name="name" placeholder="Name">
+            <input type="text" class="form-control" name="email" placeholder="Email">
+            <input type="text" class="form-control" name="Phone" placeholder="Phone">
+            <input type="text" class="form-control" name="Address" placeholder="Address">
+          </div>
+          <div class="col-md-6">
+            <textarea class="form-control" rows="5" name="message" placeholder="Message"> </textarea>
+          </div>
+          <div class="col-mid-12">
+            <button id="submit" type="submit" name="submit" onclick="myFunction()">
+            <a href="mailto:chiara.balosetti@gmail.com"> Send Message </a></button>
+          </div>
+        </form>
+      </div>
+      <footer id="myFooter" class="myFooter">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-4 myCols">
+              <h5>More About Us</h5>
+              <p> This website was created as part of the Autumn 2018 beginners website development course run in collaboration with CodeFirst:Girls and PA Consulting. The web developers were Chiara Balosetti and Anastasia Aniwa.</p>
+            </div>
+            <div class="col-md-4 myCols">
+              <h5>Keep Connected</h5>
+              <ul>
+                <li><a href="https://twitter.com/" class="twitter"> <i class="fab fa-twitter"></i> Twitter </a></li>
+                <li><a href="#" class="facebook"> <i class="fab fa-facebook-f"></i> Facebook </a></li>
+                <li><a href="https://www.google.com/" class="google"> <i class="fab fa-google"></i> Google </a></li>
+                <li><a href="#" class="instagram"> <i class="fab fa-instagram"></i> Instagram </a></li>
+                <li><a href="https://www.snapchat.com/" class="snapchat"> <i class="fab fa-snapchat"></i> Snapchat </a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 myCols">
+              <h5>Contact Information</h5>
+              <ul>
+                <li><a href="#" class="home"> <i class="fas fa-home"></i> Name </a></li>
+                <li><a href="#" class="address"> <i class="far fa-envelope"></i> Address </a></li>
+                <li><a href="#" class="phone"> <i class="fas fa-mobile-alt"></i> Tel number </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>© 2018 Copyright </p>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/Users/anastasiaaniwa/Desktop/CodeFirstGirls/Python/Competition_App/static/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/Users/anastasiaaniwa/Desktop/CodeFirstGirls/Python/Competition_App/static/js/bootstrap.js"></script>
+
   </body>
