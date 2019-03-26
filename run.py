@@ -16,5 +16,5 @@ def sign_up():
     return "All OK"
 
 
-port = int(os.environ.get('PORT', 2345))
+port = int(os.environ.get('PORT', 5000))
 app.run(debug=True, port=port)
