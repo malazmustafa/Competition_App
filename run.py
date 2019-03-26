@@ -1,4 +1,5 @@
 import requests
+import os
 from flask import Flask, render_template, request
 from main.hello import send_simple_message
 app = Flask("Competition_App")
@@ -14,4 +15,6 @@ def sign_up():
     send_simple_message (form_data["email"], form_data["firstname"]) #form_data is a variable to help you store information
     return "All OK"
 
-app.run(debug=True, port=2346)
+
+port = int(os.environ.get('PORT', 2345))
+app.run(debug=True, port=port)
