@@ -1,6 +1,6 @@
 import requests
 from flask import Flask, render_template, request
-from hello import send_simple_message
+from main.hello import send_simple_message
 app = Flask("Competition_App")
 
 @app.route("/") #@app.route specifies what path to take to find a function
