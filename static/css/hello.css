@@ -1,8 +1,3 @@
-.carousel-inner>.item {
-	min-height: 600px;
-	background-size: cover;
-	background-position: center;
-}
 
 .p.sansserif {
 	font-family: Arial, Helvetica, sans-serif;
@@ -32,12 +27,12 @@
 
 body {
 	font-family: 'Helvetica';
-	font-size: 12px;
+	font-size: 15px;
 }
 
 h1 {
 	color: rgb(244, 133, 66);
-	font-size: 30px;
+	font-size: 50px;
 }
 
 h4 {
@@ -72,7 +67,7 @@ h4 {
 .col-md-3 p {
 	color: black;
 	font-weight: bold;
-	font-size: 50px;
+	font-size: 12px;
 	margin-left: 80px;
 	margin-bottom: -20%;
 	padding-bottom: 0%;
@@ -87,10 +82,10 @@ h4 {
 	margin-bottom: 20%;
 }
 
-.col-md-3 {
+/* .col-md-3 {
 	padding: 10px;
 	position: center;
-}
+} */
 
 .icons li {
 	margin: 15px;
@@ -140,17 +135,23 @@ h4 {
 	opacity: 1;
 }
 
-.contact-form {
-	background-color: black;
-	margin: 40px;
-	padding: 50px;
+.myfooter {
+	background-color: rgb(244, 133, 66);
+	/* margin: 0px;
+	padding: 0px; */
 }
-
+#myFooter .footer-copyright{
+	background-color: rgb(244, 133, 66);
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align: center;
+	color: white;
+/* 
 .form-control {
 	height: auto;
 	width: 100%;
 	margin-top: 30px;
-}
+} */
 
 .who-we-are {
 	margin-top: 10%;
