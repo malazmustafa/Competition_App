@@ -20,9 +20,6 @@
 	font-size: 24px;
 }
 
-.dropdown-menu {
-	font-size: 20px;
-}
 
 body {
 	font-family: 'Helvetica';
@@ -41,7 +38,7 @@ h4 {
 }
 
 .nav {
-	font-size: 20px;
+	font-size: 14px;
 	color: white;
 }
 
@@ -54,18 +51,24 @@ h4 {
 	font-size: 50px;
 }
 
+.laptoppic{
+	color: black;
+	font-size: 15px;
+	border: none;
+	line-height: 20px;
+	padding-right: 70px;
+}
+
 .signupform{
 	color: black;
 	font-size: 15px;
 	border: auto;
 	position: center;
 	line-height: 20px;
-	padding: 20px;
-}
+	padding: 40px;
 
-.col-md-3 p {
+.col-md-3 {
 	color: black;
-	font-weight: bold;
 	font-size: 12px;
 	margin-left: 80px;
 	margin-bottom: -20%;
@@ -139,8 +142,8 @@ h4 {
 	margin: 0px;
 	padding: 0px;
 }
-#myFooter .footer-copyright{
-	background-color: white;
+.footer-copyright{
+	background-color: orange;
 	padding-top:3px;
 	padding-bottom:3px;
 	text-align: center;
@@ -152,21 +155,11 @@ h4 {
 	margin-top: 30px;
 } */
 
-.btn-fb:hover {
-  background-color: orange;
+
+
+.link {
+	color: orange; 
 }
-
-.btn-twitter:hover {
-  background-color: orange;
-}
-
-.pinterestbtn:hover {
-
-  background-color: orange;
-}
-
-.instagram{ 
-		color: orange; }
 
 #submit {
 align-self:auto;
