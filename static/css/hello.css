@@ -4,6 +4,9 @@
 	background-position: center;
 }
 
+.p.sansserif {
+	font-family: Arial, Helvetica, sans-serif;
+  }
 .navbar {
 	height: 70px;
 	background-color: #ffffff;
