@@ -1,7 +1,7 @@
 import requests
 import os
 from flask import Flask, render_template, request
-from main.hello import send_simple_message
+# from main.hello import send_simple_message
 app = Flask("Competition_App")
 
 @app.route("/") #@app.route specifies what path to take to find a function
@@ -32,7 +32,13 @@ def sign_up():
     send_simple_message (form_data["email"], form_data["firstname"]) #form_data is a variable to help you store information
     return "All OK"
 
+# List my public Google+ activities.
+ result = service.activities().list(userId='me', collection='public').execute()
+ tasks = result.get('items', [])
+ for task in tasks:
+   print task['title']
 
+   
 # port = int(os.environ.get('PORT', 5000))
 # app.run(debug=True, port=port)
 port = int(os.environ.get('PORT', 2345))
